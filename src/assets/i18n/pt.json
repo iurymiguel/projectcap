@@ -1,0 +1,11 @@
+{
+        "EMAIL": "Email",
+        "PASSWORD": "Senha",
+        "SAVE_PASSWORD": "Salvar Senha",
+        "OR": "ou",
+        "ENTER": "Entrar",
+        "ENTER_GOOGLE": "Entrar com Google",
+        "TOUCH_SIGN_IN": "Faça Login com Touch Id",
+        "NEW_ACCOUNT": "Criar nova conta",
+        "FORGOT_PASSWORD": "Esqueceu a senha"
+}

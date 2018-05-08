@@ -1,0 +1,45 @@
+<!--
+  Generated template for the SignInPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+  <img src="assets/imgs/login_logo.png" class="sign-in-logo" />
+  <div class="div-content">
+    <form (ngSubmit)="signInByApp()">
+      <div class="div-inputs">
+        <div>
+          <ion-label>{{ 'EMAIL' | translate }}</ion-label>
+          <input type="text" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" name="email" />
+          <ion-label>{{ 'PASSWORD' | translate }}</ion-label>
+          <input type="password" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" name="password" />
+        </div>
+
+        <div class="div-save-password">
+          <ion-label>{{'SAVE_PASSWORD' | translate}}</ion-label>
+          <ion-checkbox [(ngModel)]="user.savePassword" [ngModelOptions]="{standalone: true}"></ion-checkbox>
+        </div>
+      </div>
+      <button ion-button type="submit" block>{{'ENTER' | translate}}</button>
+    </form>
+
+    <ion-label class="or-label">{{ 'OR' | translate}}</ion-label>
+    <button ion-button block (click)="signInByGoogle()">{{ 'ENTER_GOOGLE' | translate}}</button>
+
+    <div class="div-touch-id">
+      <ion-avatar>
+        <img src="assets/imgs/fingerprint.png" class="sign-in-touch-logo" />
+      </ion-avatar>
+      <ion-label class="touch-label">{{'TOUCH_SIGN_IN' | translate}}</ion-label>
+    </div>
+
+    <div class="div-account">
+      <ion-label>{{'NEW_ACCOUNT' | translate }}</ion-label>
+      <ion-label>|</ion-label>
+      <ion-label>{{'FORGOT_PASSWORD' | translate}}</ion-label>
+    </div>
+  </div>
+
+</ion-content>
